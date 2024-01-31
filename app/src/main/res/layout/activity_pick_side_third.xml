@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PickSideThirdActivity">
+
+    <TextView
+        android:id="@+id/tvPickYourSide"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Pick your side"
+        android:textAlignment="center"
+        android:textColor="@color/DimGray"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_SideX"
+        android:layout_width="185dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_SideO"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickYourSide"
+        app:srcCompat="@drawable/x_image" />
+
+    <ImageView
+        android:id="@+id/iv_SideO"
+        android:layout_width="185dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_SideX"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickYourSide"
+        app:srcCompat="@drawable/o_image" />
+
+    <RadioGroup
+        android:id="@+id/rgPickYourSide"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_SideX">
+
+        <RadioButton
+            android:id="@+id/rbX"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="78dp"
+            android:buttonTint="@android:color/holo_orange_dark"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbO"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="148dp"
+            android:buttonTint="@android:color/holo_orange_dark" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="151dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-medium"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/DimGray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
