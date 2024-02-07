@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    android:padding="2dp">
+    android:padding="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="36dp">
 
        <TextView
            android:id="@+id/tvPlayerName1"
@@ -28,90 +28,130 @@
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center">
 
     <ImageView
         android:id="@+id/ivPlayingImageOne"
         android:paddingTop="8dp"
-        android:layout_width="137dp"
+        android:layout_width="132dp"
         android:layout_height="127dp"
-        android:src="@drawable/o_image"
+        android:src="@drawable/ic_launcher_background"
         android:layout_marginBottom="8dp"/>
+        
+        <View
+            style="@style/verticalLine"
+            android:background="@color/black"/>
 
     <ImageView
         android:id="@+id/ivPlayingImageTwo"
         android:paddingTop="8dp"
-        android:layout_width="137dp"
+        android:layout_width="132dp"
         android:layout_height="127dp"
         android:src="@drawable/ic_launcher_background"
         android:layout_marginBottom="8dp"/>
 
+        <View
+            style="@style/verticalLine"
+            android:background="@color/black"/>
+
     <ImageView
         android:id="@+id/ivPlayingImageThree"
         android:paddingTop="8dp"
-        android:layout_width="137dp"
+        android:layout_width="132dp"
         android:layout_height="127dp"
+        android:layout_marginBottom="8dp"
         android:src="@drawable/ic_launcher_background" />
     </LinearLayout>
 
 
+    <View
+        style="@style/horizontalLine"
+        android:background="@color/black"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/ivPlayingImageFour"
             android:paddingTop="8dp"
-            android:layout_width="137dp"
+            android:layout_width="132dp"
             android:layout_height="127dp"
             android:src="@drawable/ic_launcher_background"
             android:layout_marginBottom="8dp"/>
 
+        <View
+            style="@style/verticalLine"
+            android:background="@color/black"/>
+
         <ImageView
             android:id="@+id/PlayingImageFive"
             android:paddingTop="8dp"
-            android:layout_width="137dp"
+            android:layout_width="132dp"
             android:layout_height="127dp"
             android:src="@drawable/x_image"
             android:layout_marginBottom="8dp"/>
 
+        <View
+            style="@style/verticalLine"
+            android:background="@color/black"/>
+
         <ImageView
             android:id="@+id/PlayingImageSix"
             android:paddingTop="8dp"
-            android:layout_width="137dp"
+            android:layout_width="132dp"
             android:layout_height="127dp"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/ic_launcher_background" />
     </LinearLayout>
+
+
+    <View
+        style="@style/horizontalLine"
+        android:background="@color/black"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/ivPlayingImageSeven"
             android:paddingTop="8dp"
-            android:layout_width="137dp"
+            android:layout_width="132dp"
             android:layout_height="127dp"
             android:src="@drawable/ic_launcher_background"
             android:layout_marginBottom="8dp"/>
+
+        <View
+            style="@style/verticalLine"
+            android:background="@color/black"/>
 
         <ImageView
             android:id="@+id/ivPlayingImageEight"
             android:paddingTop="8dp"
-            android:layout_width="137dp"
+            android:layout_width="132dp"
             android:layout_height="127dp"
             android:src="@drawable/ic_launcher_background"
             android:layout_marginBottom="8dp"/>
 
+        <View
+            style="@style/verticalLine"
+            android:background="@color/black"/>
+
         <ImageView
             android:id="@+id/ivPlayingImageNine"
             android:paddingTop="8dp"
-            android:layout_width="137dp"
+            android:layout_width="132dp"
             android:layout_height="127dp"
-            android:src="@drawable/x_image" />
+            android:src="@drawable/x_image"
+            android:layout_marginBottom="8dp"/>
     </LinearLayout>
 
 
