@@ -11,7 +11,7 @@ import com.example.tic_toc_app.R
 
 class StartScreenFragment : Fragment() {
 
-    lateinit var playingFragment: PlayingFragment
+    lateinit var playerFragment: PlayerFragment
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,9 +31,9 @@ class StartScreenFragment : Fragment() {
 
         buttonWithFriend.setOnClickListener {
 
-            playingFragment = PlayingFragment()
+            playerFragment = PlayerFragment()
             parentFragmentManager.beginTransaction()
-                .replace(R.id.main_container, playingFragment)
+                .replace(R.id.main_container, playerFragment)
                 .addToBackStack(null)
                 .commit()
         }
