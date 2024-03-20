@@ -34,8 +34,10 @@ class PlayerFragment : Fragment() {
             val nameOne = etNickNameOne.text.toString()
             val nameTwo = etNickNameTwo.text.toString()
 
-            if (nameOne.isEmpty() && nameTwo.isEmpty()) {
-                Toast.makeText(context, "please enter your name!", Toast.LENGTH_LONG).show()
+            if (nameOne.isEmpty()) {
+                Toast.makeText(context, "Player One Please Enter Your Name!", Toast.LENGTH_LONG).show()
+            } else if (nameTwo.isEmpty()) {
+                Toast.makeText(context, "Player Two Please Enter Your Name!", Toast.LENGTH_LONG).show()
             } else {
 
                 val bundle = Bundle()

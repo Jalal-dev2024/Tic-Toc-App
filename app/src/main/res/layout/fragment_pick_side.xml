@@ -61,14 +61,14 @@
             android:layout_height="48dp"
             android:layout_marginStart="78dp"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:checked="true" />
+            android:checked="true"/>
 
         <RadioButton
             android:id="@+id/rbO"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="148dp"
-            android:buttonTint="@android:color/holo_orange_dark" />
+            android:buttonTint="@android:color/holo_orange_dark"/>
 
     </RadioGroup>
 
